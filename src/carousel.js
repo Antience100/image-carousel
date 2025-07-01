@@ -43,7 +43,7 @@ export function setUpImageCarousel() {
         // If === next return 1 or else return the value -1
         const offset = button.dataset.carouselButton === "next" ? 1 : -1;
         const activeSlide = slides.querySelector("[data-active]");
-        if(!activeSlide) return;
+        if (!activeSlide) return;
         const newIndex = [...slides.children].indexOf(activeSlide) + offset;
         goToSlide(newIndex);
       });
