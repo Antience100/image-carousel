@@ -8,7 +8,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.htmnl$/i,
+        test: /\.html$/i,
         loader: "html-loader",
       },
       {
@@ -24,6 +24,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "Production",
+      template: "./src/template.html",
     }),
   ],
   output: {
